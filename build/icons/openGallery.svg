@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(-1325.000000, -139.000000)" fill="#FFFFFF" fill-rule="nonzero">
+      <g transform="translate(1319.000000, 133.000000)">
+        <g
+          transform="translate(22.192388, 22.192388) rotate(-45.000000) translate(-22.192388, -22.192388) translate(14.192388, 17.192388)">
+          <rect transform="translate(4.595912, 4.680530) rotate(-45.000000) translate(-4.595912, -4.680530) "
+                x="3.59591196" y="-0.819470427" width="2" height="11" rx="1"></rect>
+          <rect transform="translate(10.956670, 4.683111) rotate(45.000000) translate(-10.956670, -4.683111) "
+                x="9.95666956" y="-0.816888912" width="2" height="11" rx="1"></rect>
+        </g>
+        <g
+          transform="translate(9.192388, 9.192388) rotate(-225.000000) translate(-9.192388, -9.192388) translate(1.192388, 4.192388)">
+          <rect transform="translate(4.595912, 4.680530) rotate(-45.000000) translate(-4.595912, -4.680530) "
+                x="3.59591196" y="-0.819470427" width="2" height="11" rx="1"></rect>
+          <rect transform="translate(10.956670, 4.683111) rotate(45.000000) translate(-10.956670, -4.683111) "
+                x="9.95666956" y="-0.816888912" width="2" height="11" rx="1"></rect>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
