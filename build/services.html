@@ -290,7 +290,10 @@
       var video = document.getElementsByTagName('video');
       for (var i = 0; i < imgs.length; i++)
       {
-        all.push(imgs[i]);
+        if (all.indexOf(imgs[i]) <= -1)
+        {
+          all.push(imgs[i]);
+        }
       }
       var tags = document.querySelectorAll('[style]'),
         el;
@@ -310,7 +313,14 @@
           var url = el.getAttribute('style').replace('background-image: url(', '').replace(');', '');
           var img = new Image();
           img.src = url;
-          all.push(img);
+          var imgIsExist = all.find(function(imgItem)
+          {
+            return imgItem.src === img.src;
+          });
+          if (!imgIsExist)
+          {
+            all.push(img);
+          }
         }
       }
       for (var i = 0; i < video.length; i++)
@@ -321,10 +331,8 @@
       var prevVal = document.querySelector('.preloader__val.prev');
       var nextVal = document.querySelector('.preloader__val.next');
       var scale = document.querySelector('.preloader__scale');
-      var scaleTime = 300;
       var perc = 0;
       var perc_old = perc;
-      var time = 0;
       var t = 0;
       var allComplete = [];
       for (var i = 0; i < all.length; i++)
@@ -332,90 +340,107 @@
         allComplete.push(false);
       }
 
+      function checkLoadedElements(length)
+      {
+        t++;
+        perc = t / length * 100;
+        var percN = Math.max(perc, perc_old);
+        scale.style.width = percN + '%';
+        var willHiddenElement = prevVal;
+        var willShowedElement = nextVal;
+        if (prevVal.classList.contains('hide'))
+        {
+          willHiddenElement = nextVal;
+          willShowedElement = prevVal;
+        }
+        willShowedElement.innerText = Math.floor(perc);
+        willHiddenElement.classList.add('hide');
+        willShowedElement.classList.remove('hide');
+        perc_old = perc;
+        perc_old = perc;
+      }
+
+      function pseudoLoad()
+      {
+        checkLoadedElements(7);
+        setTimeout(function()
+        {
+          if (perc < 80)
+          {
+            pseudoLoad();
+          }
+        }, 400);
+      }
+
       function loaded()
       {
-        time += scaleTime;
-
-        function checkLoadedElements()
+        allComplete.forEach(function(item, index)
         {
-          t++;
-          perc = t / all.length * 100;
-          percN = Math.max(perc, perc_old);
-          prevVal.classList.remove('hide');
-          nextVal.classList.add('hide');
-          prevVal.innerText = Math.floor(perc_old);
-          nextVal.innerText = Math.floor(perc);
-          scale.style.width = percN + '%';
-          setTimeout(function()
+          if (!item)
           {
-            prevVal.classList.add('hide');
-            nextVal.classList.remove('hide');
-          }, 1);
-          perc_old = perc;
-          perc_old = perc;
-        }
-        allComplete.map(function(k, i)
-        {
-          if (i >= all.length - video.length)
-          {
-            if (all[i].nodeName === 'VIDEO')
+            var nodeName = all[index].nodeName;
+            var currentItemOfAll = all[index];
+            if (
+              /* Check video */
+              nodeName === 'VIDEO' && currentItemOfAll.readyState > 3 ||
+              /* Check images */
+              nodeName === 'IMG' && currentItemOfAll.complete && !item)
             {
-              if (all[i].readyState === 4 && !allComplete[i])
-              {
-                checkLoadedElements();
-                allComplete[i] = true;
-              }
-            }
-          }
-          if (i < all.length - video.length)
-          {
-            if (all[i].nodeName === 'IMG')
-            {
-              if (all[i].complete && !allComplete[i])
-              {
-                if (!k)
-                {
-                  checkLoadedElements();
-                  allComplete[i] = true;
-                }
-              }
+              checkLoadedElements(all.length);
+              allComplete[index] = true;
             }
           }
         });
-        if (perc < 100)
+        var allLocalContentLoaded = allComplete.length <= 0 || allComplete.find(function(item)
         {
-          setTimeout(loaded, scaleTime);
+          return item !== false;
+        }) === false;
+        if (perc < 100 && !allLocalContentLoaded)
+        {
+          setTimeout(loaded, 150);
+        }
+        if (perc < 80 && allLocalContentLoaded)
+        {
+          pseudoLoad();
         }
       }
       loaded();
-      var hbLoad = 0;
+      var hbLoad = false;
 
       function hasBeenLoaded()
       {
+        hbLoad = true;
         perc = 100;
-        if (perc === 100 && !hbLoad)
+        scale.style.width = '100%';
+        preloader.classList.add('hide');
+        setTimeout(function()
         {
-          hbLoad = 1;
-          scale.style.width = '100%';
-          preloader.classList.add('hide');
-          prevVal.innerText = '';
-          nextVal.innerText = '100';
-          setTimeout(function()
-          {
-            preloader.style.display = 'none';
-          }, 400);
-        }
-        else
-        {
-          setTimeout(function()
-          {
-            hasBeenLoaded();
-          }, 100);
-        }
+          preloader.style.display = 'none';
+        }, 400);
       }
       window.onload = function()
       {
-        hasBeenLoaded();
+        var mainVideoElement = document.getElementById('mainVideo');
+
+        function checkVideoStatus()
+        {
+          if (mainVideoElement.readyState > 3)
+          {
+            hasBeenLoaded();
+          }
+          else
+          {
+            setTimeout(checkVideoStatus, 300);
+          }
+        }
+        if (mainVideoElement)
+        {
+          checkVideoStatus();
+        }
+        else
+        {
+          hasBeenLoaded();
+        }
       };
 
     </script>
