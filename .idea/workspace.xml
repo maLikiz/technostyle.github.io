@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a5a9ff1-ba50-4d4c-bd9a-d274e93c8113" name="Default Changelist" comment="" />
+    <list default="true" id="2a5a9ff1-ba50-4d4c-bd9a-d274e93c8113" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view-all-pages.html" beforeDir="false" afterPath="$PROJECT_DIR$/view-all-pages.html" afterDir="false" />
+    </list>
     <list id="4ee18041-1190-4048-b654-50a93de8b288" name="test" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,22 +19,23 @@
     <session id="-2097629779">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="3" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1" />
-          <entry key="txt" value="46" />
+          <entry key="html" value="2" />
+          <entry key="txt" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="46" />
-          <entry key="Twig" value="1" />
+          <entry key="PLAIN_TEXT" value="107" />
+          <entry key="Twig" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -64,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view-all-pages.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="180">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -94,10 +98,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="307" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -154,6 +158,8 @@
       <workItem from="1550358942727" duration="225000" />
       <workItem from="1550399073659" duration="718000" />
       <workItem from="1550401532557" duration="94000" />
+      <workItem from="1551013533423" duration="1047000" />
+      <workItem from="1551017085133" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1550356648619</created>
@@ -197,11 +203,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550401615055</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="made new fixes by Ilya">
+      <created>1551013582268</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1551013582268</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2250000" />
+    <option name="totallyTimeSpent" value="3305000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -213,11 +226,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="307" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49144253" visible="true" weight="0.35267857" />
-      <window_info id="Structure" order="1" sideWeight="0.50855744" side_tool="true" visible="true" weight="0.35267857" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4878837" visible="true" weight="0.3524763" />
+      <window_info id="Structure" order="1" sideWeight="0.5121163" side_tool="true" visible="true" weight="0.3524763" />
       <window_info id="Favorites" order="2" sideWeight="0.5010846" side_tool="true" weight="0.24973656" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -227,9 +240,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.6681548" visible="true" weight="0.3295082" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.66701794" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4985119" weight="0.49836066" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.33184522" side_tool="true" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3329821" side_tool="true" visible="true" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -274,7 +287,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="change url paths" />
     <MESSAGE value="fix bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
+    <MESSAGE value="made new fixes by Ilya" />
+    <option name="LAST_COMMIT_MESSAGE" value="made new fixes by Ilya" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/about.html">
@@ -282,8 +296,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view-all-pages.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        <state relative-caret-position="180">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
         </state>
       </provider>
     </entry>
