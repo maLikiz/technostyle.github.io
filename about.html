@@ -608,11 +608,14 @@
           hbLoad = true;
           perc = 100;
           scale.style.width = '100%';
-          preloader.classList.add('hide');
+          setTimeout(function()
+          {
+            preloader.classList.add('hide');
+          }, 300);
           setTimeout(function()
           {
             preloader.style.display = 'none';
-          }, 400);
+          }, 700);
         }
         window.onload = function()
         {
