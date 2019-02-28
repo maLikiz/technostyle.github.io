@@ -16,834 +16,836 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <header class="header in-dark">
-        <a href="#home" class="header__logo">
-          <svg class="icon icon-logo">
-            <use xlink:href="img/sprite.svg#icon-logo"></use>
-          </svg>
-        </a>
-        <div class="header__inner">
-          <div class="header__content">
-            <div class="header__left">
-              <div class="header__location">
-                <svg class="icon icon-location-pin">
-                  <use xlink:href="img/sprite.svg#icon-location-pin"></use>
-                </svg>
-                <div class="header__location__name"> Москва </div>
-                <div class="icon-small-arrow"></div>
+      <div class="mainPage">
+        <header class="header in-dark">
+          <a href="#home" class="header__logo">
+            <svg class="icon icon-logo">
+              <use xlink:href="img/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <div class="header__inner">
+            <div class="header__content">
+              <div class="header__left">
+                <div class="header__location">
+                  <svg class="icon icon-location-pin">
+                    <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                  </svg>
+                  <div class="header__location__name"> Москва </div>
+                  <div class="icon-small-arrow"></div>
+                </div>
+              </div>
+              <nav class="header__nav">
+                <a href="./products.html">Продукция</a>
+                <a href="./services.html">Услуги</a>
+                <a href="./production.html">Производство</a>
+                <a href="./about.html">Компания</a>
+                <a href="./news.html">Новости</a>
+                <a href="./contacts.html">Контакты</a>
+              </nav>
+              <div class="header__right">
+                <a href="tel:88005559332" class="phone">
+                  <svg class="icon icon-phone">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg> 8 800 555-93-32 </a>
+                <div class="header__language"> RU </div>
+                <div class="header__search-btn">
+                  <svg class="icon icon-search">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </div>
               </div>
             </div>
-            <nav class="header__nav">
-              <a href="./products.html">Продукция</a>
-              <a href="./services.html">Услуги</a>
-              <a href="./production.html">Производство</a>
-              <a href="./about.html">Компания</a>
-              <a href="./news.html">Новости</a>
-              <a href="./contacts.html">Контакты</a>
-            </nav>
-            <div class="header__right">
-              <a href="tel:88005559332" class="phone">
-                <svg class="icon icon-phone">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg> 8 800 555-93-32 </a>
-              <div class="header__language"> RU </div>
-              <div class="header__search-btn">
-                <svg class="icon icon-search">
-                  <use xlink:href="img/sprite.svg#icon-search"></use>
+            <div class="header__search">
+              <input type="text" class="header__search__input" placeholder="Введите запрос, например сэндвич-панели" />
+              <div class="header__search__close">
+                <svg class="icon icon-close">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
                 </svg>
               </div>
             </div>
           </div>
-          <div class="header__search">
-            <input type="text" class="header__search__input" placeholder="Введите запрос, например сэндвич-панели" />
-            <div class="header__search__close">
+          <div class="header__hamburger">
+            <div class="icon">
+              <div class="line line1"></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+            </div>
+          </div>
+        </header>
+        <!--suppress CssUnknownTarget -->
+        <div class="main__screens">
+          <div class="main__screen main__home in-dark" id="home">
+            <div class="mainSliderCounter">
+              <div class="mainSliderCounter-Counts">
+                <div class="mainSliderCounter-currentCount"> 1 </div>
+                <div class="mainSliderCounter-CountsLine"></div>
+                <div class="mainSliderCounter-lengthCount"> 5 </div>
+              </div>
+              <a href="#production" class="mainSliderCounter-next" data-layout="mainSliderCounter-next">
+                <svg class="icon icon-arrowLong">
+                  <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="video" style="background-image: url(img/main-hero.jpg);">
+              <video id="mainVideo" src="http://develop.yarovoy.studio/technostyle/video/main.mp4" muted="muted" preload="auto" playsinline> </video>
+              <div class="video__blackout"> </div>
+            </div>
+            <div class="main__hero">
+              <h1 class="big-title"> ТехноCтиль </h1>
+            </div>
+            <div class="main__bot">
+              <div class="mainBotInfo">
+                <div class="mainBotInfoHeader"> Производитель сэндвич-панелей, фасонных элементов и рулонной стали с полимерным покрытием </div>
+                <a href="production.html" class="mainBotLink"> Продукция
+                  <svg class="icon icon-arrow-right">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="mainBotColumn">
+                <div class="owl-carousel mainBotProductionSlider">
+                  <div class="mainBotProductionSliderItem">
+                    <div class="mainBotColumnHeader"> 4 000 000 м² </div>
+                    <div> Сэндвич-панелей мощность производства в год </div>
+                  </div>
+                  <div class="mainBotProductionSliderItem">
+                    <div class="mainBotColumnHeader"> 10 000 м² </div>
+                    <div> Производственные площади </div>
+                  </div>
+                  <div class="mainBotProductionSliderItem">
+                    <div class="mainBotColumnHeader"> 18 000 </div>
+                    <div> Объектов построено, с использованием панелей ТехноСтиль </div>
+                  </div>
+                </div>
+                <a href="production.html" class="mainBotLink"> О производстве
+                  <svg class="icon icon-arrow-right">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="mainBotColumn">
+                <div class="mainBotColumnInfo">
+                  <a href="new.html" class="mainBotColumnHeader"> Итоги выставки «Металл-Экспо 2018» </a>
+                </div>
+                <a href="news.html" class="mainBotLink"> Новости
+                  <svg class="icon icon-arrow-right">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="main__screen main__catalog" id="production">
+            <div class="container-wrapper">
+              <div class="mainSliderCounter">
+                <a href="#home" class="mainSliderCounter-prev" data-layout="mainSliderCounter-prev">
+                  <svg class="icon icon-arrowLong">
+                    <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
+                  </svg>
+                </a>
+                <div class="mainSliderCounter-Counts">
+                  <div class="mainSliderCounter-currentCount"> 2 </div>
+                  <div class="mainSliderCounter-CountsLine"></div>
+                  <div class="mainSliderCounter-lengthCount"> 5 </div>
+                </div>
+                <a href="#services" class="mainSliderCounter-next" data-layout="mainSliderCounter-next">
+                  <svg class="icon icon-arrowLong">
+                    <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="main__screen__header"> Продукция </div>
+              <div class="slider">
+                <div class="slider__counter">
+                  <div class="slider__counter__cur">3</div>
+                  <div class="slider__counter__line"></div>
+                  <div class="slider__counter__length">7</div>
+                </div>
+                <div class="slider__dots">
+                  <div class="slider__dots__inner">
+                    <div>
+                      <div class="slider__dot"> Сэндвич-панели с минеральной ватой (МВ) </div>
+                    </div>
+                    <div>
+                      <div class="slider__dot"> Сэндвич-панели с&nbsp;пенополистиролом (ПП) </div>
+                    </div>
+                    <div>
+                      <div class="slider__dot"> Сэндвич-панели с (PIR) / (PUR) </div>
+                    </div>
+                    <div>
+                      <div class="slider__dot"> Окрашенная рулонная сталь </div>
+                    </div>
+                    <div>
+                      <div class="slider__dot"> Фасонные элементы и&nbsp;комплектующие </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-carousel">
+                  <div class="slider__item">
+                    <div class="slider__item-pic">
+                      <img src="img/main/catalog/1.png" alt=""> </div>
+                    <div class="btns">
+                      <a href="#" class="btn-next__wrapper">
+                        <div class="btn-next blue">
+                          <div class="btn-next__icon"> </div>
+                          <div class="btn-next__text"> Стеновые </div>
+                        </div>
+                      </a>
+                      <a href="#" class="btn-next__wrapper">
+                        <div class="btn-next orange">
+                          <div class="btn-next__icon"> </div>
+                          <div class="btn-next__text"> Кровельные </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="slider__item">
+                    <div class="slider__item-pic">
+                      <img src="img/main/catalog/2.png" alt=""> </div>
+                    <div class="btns">
+                      <a href="#" class="btn-next__wrapper">
+                        <div class="btn-next blue">
+                          <div class="btn-next__icon"> </div>
+                          <div class="btn-next__text"> Подробнее </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="slider__item">
+                    <div class="slider__item-pic">
+                      <img src="img/main/catalog/3.png" alt=""> </div>
+                    <div class="btns">
+                      <a href="#" class="btn-next__wrapper">
+                        <div class="btn-next blue">
+                          <div class="btn-next__icon"> </div>
+                          <div class="btn-next__text"> Стеновые </div>
+                        </div>
+                      </a>
+                      <a href="#" class="btn-next__wrapper">
+                        <div class="btn-next orange">
+                          <div class="btn-next__icon"> </div>
+                          <div class="btn-next__text"> Кровельные </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="slider__item rolls">
+                    <img src="img/main/catalog/4.png" class="pic-rolls" alt="">
+                    <div class="btns">
+                      <a href="#" class="btn-next__wrapper">
+                        <div class="btn-next blue">
+                          <div class="btn-next__icon"> </div>
+                          <div class="btn-next__text"> www.color-ts.ru </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="slider__item fasson">
+                    <img src="img/main/catalog/5.png" class="pic-fasson" alt="">
+                    <div class="btns">
+                      <a href="#" class="btn-next__wrapper">
+                        <div class="btn-next blue">
+                          <div class="btn-next__icon"> </div>
+                          <div class="btn-next__text"> Подробнее </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__screen main__services in-dark" id="services">
+            <div class="container-wrapper">
+              <div class="mainSliderCounter">
+                <a href="#production" class="mainSliderCounter-prev" data-layout="mainSliderCounter-prev">
+                  <svg class="icon icon-arrowLong">
+                    <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
+                  </svg>
+                </a>
+                <div class="mainSliderCounter-Counts">
+                  <div class="mainSliderCounter-currentCount"> 3 </div>
+                  <div class="mainSliderCounter-CountsLine"></div>
+                  <div class="mainSliderCounter-lengthCount"> 5 </div>
+                </div>
+                <a href="#objects" class="mainSliderCounter-next" data-layout="mainSliderCounter-next">
+                  <svg class="icon icon-arrowLong">
+                    <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="main__screen__header"> Услуги </div>
+              <div class="slider">
+                <div class="slider__counter">
+                  <div class="slider__counter__cur">3</div>
+                  <div class="slider__counter__line"></div>
+                  <div class="slider__counter__length">7</div>
+                </div>
+                <div class="slider__dots">
+                  <div class="slider__dots__inner">
+                    <div>
+                      <div class="slider__dot"> Проектирование </div>
+                    </div>
+                    <div>
+                      <div class="slider__dot"> Упаковка </div>
+                    </div>
+                    <div>
+                      <div class="slider__dot"> Доставка </div>
+                    </div>
+                    <div>
+                      <div class="slider__dot"> Монтаж </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-carousel">
+                  <div class="slider__item" style="background-image: url(img/main/services/1.jpg);">
+                    <div class="service__info">
+                      <h1 class="service__title animate-clip-inner"> Проектирование заготовок по проекту </h1>
+                      <div class="service__descr animate-clip-inner"> Специалисты конструкторского отдела выполняют монтажную схему по панелям, а также разработают нестандартные технические решения и расчеты </div>
+                      <div class="btn-next__wrapper">
+                        <a href="service.html" class="btn-next blue">
+                          <div class="btn-next__icon"> </div>
+                          <div class="btn-next__text"> Побробнее </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__item" style="background-image: url(img/main/services/2.jpg);">
+                    <div class="service__info">
+                      <h1 class="service__title animate-clip-inner"> Упаковка </h1>
+                      <div class="service__descr animate-clip-inner"> Сэндвич-панели упаковываются несколькими способами в зависимости от расстояния и вида транспорта: стандартная и усиленная упаковка для автотранспорта, упаковка для перевозки ж/д, морским путём, а также&amp;nbsp;с помощью контейнеров.
+                        </div>
+                      <div class="btn-next__wrapper">
+                        <a href="service.html" class="btn-next blue">
+                          <div class="btn-next__icon"> </div>
+                          <div class="btn-next__text"> Побробнее </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__item" style="background-image: url(img/main/services/3.jpg);">
+                    <div class="service__info">
+                      <h1 class="service__title animate-clip-inner"> Доставка </h1>
+                      <div class="service__descr animate-clip-inner"> Осуществляется всеми видами транспорта в любую точку России, а также в страны ближнего и дальнего зарубежья. </div>
+                      <div class="btn-next__wrapper">
+                        <a href="service.html" class="btn-next blue">
+                          <div class="btn-next__icon"> </div>
+                          <div class="btn-next__text"> Побробнее </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__item" style="background-image: url(img/main/services/4.jpg);">
+                    <div class="service__info">
+                      <h1 class="service__title animate-clip-inner"> Монтаж </h1>
+                      <div class="service__descr animate-clip-inner"> Работы по монтажу проводят надежные партнеры нашей компании. Обращаясь к нам, вы можете рассчитывать на высокое качество монтажа, соблюдение сроков согласно заключенного договора и специальные цены на установку сэндвич-панелей. </div>
+                      <div class="btn-next__wrapper">
+                        <a href="service.html" class="btn-next blue">
+                          <div class="btn-next__icon"> </div>
+                          <div class="btn-next__text"> Побробнее </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__screen main__objects in-dark gallery" id="objects">
+            <div class="container-wrapper">
+              <div class="mainSliderCounter">
+                <a href="#services" class="mainSliderCounter-prev" data-layout="mainSliderCounter-prev">
+                  <svg class="icon icon-arrowLong">
+                    <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
+                  </svg>
+                </a>
+                <div class="mainSliderCounter-Counts">
+                  <div class="mainSliderCounter-currentCount"> 4 </div>
+                  <div class="mainSliderCounter-CountsLine"></div>
+                  <div class="mainSliderCounter-lengthCount"> 5 </div>
+                </div>
+                <a href="#news" class="mainSliderCounter-next" data-layout="mainSliderCounter-next">
+                  <svg class="icon icon-arrowLong">
+                    <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="main__screen__header"> Объекты </div>
+              <div class="slider">
+                <div class="slider__dots">
+                  <div class="slider__dots__inner">
+                    <div>
+                      <a href="#" class="slider__dot"> Леруа Мерлен </a>
+                    </div>
+                    <div>
+                      <a href="#" class="slider__dot"> Аэропорт «Внуково» </a>
+                    </div>
+                    <div>
+                      <a href="#" class="slider__dot"> Selgros </a>
+                    </div>
+                    <div>
+                      <a href="#" class="slider__dot"> Mercedes Benz </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__counter">
+                  <div class="slider__counter__cur">3</div>
+                  <div class="slider__counter__line"></div>
+                  <div class="slider__counter__length">7</div>
+                </div>
+                <div class="owl-carousel main__object__slider__wrapper">
+                  <div class="slider__item" style="background-image: url(img/main/objects/kashirovaya-plaza/DJI_0642.jpg);">
+                    <div class="openGallery">
+                      <svg class="icon icon-openGallery">
+                        <use xlink:href="img/sprite.svg#icon-openGallery"></use>
+                      </svg>
+                    </div>
+                    <div class="main__objects__info-wrapper slider__item__info">
+                      <div class="main__objects__info">
+                        <div class="main__objects__header">
+                          <h2 class="main__objects__title h2"> «Леруа Мерлен» в Балашихе, Московская обл. </h2>
+                          <div class="main__objects__descr"> </div>
+                        </div>
+                        <div class="main__objects__numbers">
+                          <div class="main__objects__number">
+                            <div class="main__objects__numbers__title"> 21 000 м² </div>
+                            <div class="main__objects__numbers__descr"> Объем поставки
+                              <br> панелей в год </div>
+                          </div>
+                          <div class="main__objects__number">
+                            <div class="main__objects__numbers__title"> 2014 </div>
+                            <div class="main__objects__numbers__descr"> Год постройки </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider__item__bot">
+                        <div class="slider__item__bot__left">
+                          <div class="main__objects__review__wrapper">
+                            <div class="main__objects__review"> Отзыв клиента </div>
+                          </div>
+                          <div class="btn-next__wrapper">
+                            <a href="product.html" class="btn-next blue">
+                              <div class="btn-next__icon"> </div>
+                              <div class="btn-next__text"> Подробнее </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="slider__all-wrapper">
+                          <a href="#" class="slider__all">
+                            <span>Все объекты</span>
+                            <svg class="icon icon-arrow">
+                              <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__item" style="background-image: url(img/main/objects/pavlovskaya-sloboda/DJI_0219.jpg);">
+                    <div class="openGallery">
+                      <svg class="icon icon-openGallery">
+                        <use xlink:href="img/sprite.svg#icon-openGallery"></use>
+                      </svg>
+                    </div>
+                    <div class="main__objects__info-wrapper slider__item__info">
+                      <div class="main__objects__info">
+                        <div class="main__objects__header">
+                          <h2 class="main__objects__title h2"> Аэропорт «Внуково», Москва </h2>
+                          <div class="main__objects__descr"> </div>
+                        </div>
+                        <div class="main__objects__numbers">
+                          <div class="main__objects__number">
+                            <div class="main__objects__numbers__title"> 21 000 м² </div>
+                            <div class="main__objects__numbers__descr"> Объем поставки
+                              <br> панелей в год </div>
+                          </div>
+                          <div class="main__objects__number">
+                            <div class="main__objects__numbers__title"> 2014 </div>
+                            <div class="main__objects__numbers__descr"> Год постройки </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider__item__bot">
+                        <div class="slider__item__bot__left">
+                          <div class="main__objects__review__wrapper">
+                            <div class="main__objects__review"> Отзыв клиента </div>
+                          </div>
+                          <div class="btn-next__wrapper">
+                            <a href="product.html" class="btn-next blue">
+                              <div class="btn-next__icon"> </div>
+                              <div class="btn-next__text"> Подробнее </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="slider__all-wrapper">
+                          <a href="#" class="slider__all">
+                            <span>Все объекты</span>
+                            <svg class="icon icon-arrow">
+                              <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__item" style="background-image: url(img/main/objects/ubileyniy/DJI_0909.jpg);">
+                    <div class="openGallery">
+                      <svg class="icon icon-openGallery">
+                        <use xlink:href="img/sprite.svg#icon-openGallery"></use>
+                      </svg>
+                    </div>
+                    <div class="main__objects__info-wrapper slider__item__info">
+                      <div class="main__objects__info">
+                        <div class="main__objects__header">
+                          <h2 class="main__objects__title h2"> Склад «Selgros», в Одинцово, Московская обл. </h2>
+                          <div class="main__objects__descr"> </div>
+                        </div>
+                        <div class="main__objects__numbers">
+                          <div class="main__objects__number">
+                            <div class="main__objects__numbers__title"> 21 000 м² </div>
+                            <div class="main__objects__numbers__descr"> Объем поставки
+                              <br> панелей в год </div>
+                          </div>
+                          <div class="main__objects__number">
+                            <div class="main__objects__numbers__title"> 2014 </div>
+                            <div class="main__objects__numbers__descr"> Год постройки </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider__item__bot">
+                        <div class="slider__item__bot__left">
+                          <div class="main__objects__review__wrapper">
+                            <div class="main__objects__review"> Отзыв клиента </div>
+                          </div>
+                          <div class="btn-next__wrapper">
+                            <a href="product.html" class="btn-next blue">
+                              <div class="btn-next__icon"> </div>
+                              <div class="btn-next__text"> Подробнее </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="slider__all-wrapper">
+                          <a href="#" class="slider__all">
+                            <span>Все объекты</span>
+                            <svg class="icon icon-arrow">
+                              <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__item" style="background-image: url(img/main/objects/ubileyniy/DJI_0904.jpg);">
+                    <div class="openGallery">
+                      <svg class="icon icon-openGallery">
+                        <use xlink:href="img/sprite.svg#icon-openGallery"></use>
+                      </svg>
+                    </div>
+                    <div class="main__objects__info-wrapper slider__item__info">
+                      <div class="main__objects__info">
+                        <div class="main__objects__header">
+                          <h2 class="main__objects__title h2"> Mercedes Benz </h2>
+                          <div class="main__objects__descr"> </div>
+                        </div>
+                        <div class="main__objects__numbers">
+                          <div class="main__objects__number">
+                            <div class="main__objects__numbers__title"> 21 000 м² </div>
+                            <div class="main__objects__numbers__descr"> Объем поставки
+                              <br> панелей в год </div>
+                          </div>
+                          <div class="main__objects__number">
+                            <div class="main__objects__numbers__title"> 2014 </div>
+                            <div class="main__objects__numbers__descr"> Год постройки </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider__item__bot">
+                        <div class="slider__item__bot__left">
+                          <div class="main__objects__review__wrapper">
+                            <div class="main__objects__review"> Отзыв клиента </div>
+                          </div>
+                          <div class="btn-next__wrapper">
+                            <a href="product.html" class="btn-next blue">
+                              <div class="btn-next__icon"> </div>
+                              <div class="btn-next__text"> Подробнее </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="slider__all-wrapper">
+                          <a href="#" class="slider__all">
+                            <span>Все объекты</span>
+                            <svg class="icon icon-arrow">
+                              <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__screen mainNews in-dark" id="news">
+            <div class="container-wrapper">
+              <div class="mainSliderCounter">
+                <a href="#objects" class="mainSliderCounter-prev" data-layout="mainSliderCounter-prev">
+                  <svg class="icon icon-arrowLong">
+                    <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
+                  </svg>
+                </a>
+                <div class="mainSliderCounter-Counts">
+                  <div class="mainSliderCounter-currentCount"> 5 </div>
+                  <div class="mainSliderCounter-CountsLine"></div>
+                  <div class="mainSliderCounter-lengthCount"> 5 </div>
+                </div>
+              </div>
+              <div class="main__screen__header"> Анонсы </div>
+              <div class="slider__counter">
+                <div class="slider__counter__cur">1</div>
+                <div class="slider__counter__line"></div>
+                <div class="slider__counter__length">3</div>
+              </div>
+              <div class="mainNewsSlider owl-carousel">
+                <div class="mainNewsSliderItem" style="background-image: url(img/main/news/1.jpg);">
+                  <div class="mainNewsSliderItemInfo">
+                    <div class="mainNewsSliderItemDate"> 15.01.2019 </div>
+                    <div class="mainNewsSliderItemBlock">
+                      <div class="mainNewsSliderItemTitle h3"> Открытие 24-й Международной промышленной выставки «Металл-Экспо 2018» </div>
+                      <div class="mainNewsSliderItemDescription h4"> Компания «Техностиль колор» в рамках 24-ой выставки рада познакомить всех участников и посетителей с деятельностью завода, представить образцы своей продукции, наладить новые перспективные деловые отношения. Ждем вас на нашем стенде
+                        в 75 павильоне, 3 зале, место ЗА03. </div>
+                      <div class="btn-next__wrapper">
+                        <a href="new.html" class="btn-next blue">
+                          <div class="btn-next__icon"> </div>
+                          <div class="btn-next__text"> Читать далее </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mainNewsSliderItem" style="background-image: url(img/main/news/2.jpg);">
+                  <div class="mainNewsSliderItemInfo">
+                    <div class="mainNewsSliderItemDate"> 15.01.2019 </div>
+                    <div class="mainNewsSliderItemBlock">
+                      <div class="mainNewsSliderItemTitle h3"> Открытие 24-й Международной промышленной выставки «Металл-Экспо 2018» </div>
+                      <div class="mainNewsSliderItemDescription h4"> Компания «Техностиль колор» в рамках 24-ой выставки рада познакомить всех участников и посетителей с деятельностью завода, представить образцы своей продукции, наладить новые перспективные деловые отношения. Ждем вас на нашем стенде
+                        в 75 павильоне, 3 зале, место ЗА03. </div>
+                      <div class="btn-next__wrapper">
+                        <a href="new.html" class="btn-next blue">
+                          <div class="btn-next__icon"> </div>
+                          <div class="btn-next__text"> Читать далее </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mainNewsSliderItem" style="background-image: url(img/about/hero.jpg);">
+                  <div class="mainNewsSliderItemInfo">
+                    <div class="mainNewsSliderItemDate"> 15.01.2019 </div>
+                    <div class="mainNewsSliderItemBlock">
+                      <div class="mainNewsSliderItemTitle h3"> Открытие 24-й Международной промышленной выставки «Металл-Экспо 2018» </div>
+                      <div class="mainNewsSliderItemDescription h4"> Компания «Техностиль колор» в рамках 24-ой выставки рада познакомить всех участников и посетителей с деятельностью завода, представить образцы своей продукции, наладить новые перспективные деловые отношения. Ждем вас на нашем стенде
+                        в 75 павильоне, 3 зале, место ЗА03. </div>
+                      <div class="btn-next__wrapper">
+                        <a href="new.html" class="btn-next blue">
+                          <div class="btn-next__icon"> </div>
+                          <div class="btn-next__text"> Читать далее </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mainNewsSliderNext">
+                <div class="mainNewsSliderNextBorder"></div>
+                <div class="mainNewsSliderNextImage" style="background-image: url(img/main/news/2.jpg);"></div>
+              </div>
+            </div>
+            <div class="simpleFooter">
+              <div class="container-wrapper">
+                <div class="simpleFooterCopyright"> © 2008 – 2019 ГК «Техностиль» </div>
+                <a href="http://yarovoy.studio" target="_blank"> Разработка сайта — Студия Евгения Ярового` </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__review">
+          <div class="row">
+            <div class="col">
+              <div class="main__review__descr"> «Спасибо большое компании и ее работникам за то, что качественно выполняете свои обязанности и делаете это великолепно!
+                <br>Расчитываю на дальнейшую продуктивную работу с вами» </div>
+              <div class="main__review__bot">
+                <span> Директор по строительству Рыцев И.Н. </span>
+              </div>
+            </div>
+            <div class="col">
+              <a href="#" class="info-file">
+                <span class="info-file__pic">
+                  <img src="img/main/reviews/lenta-doc.jpg" alt=""> </span>
+                <span class="info-file__title"> Благодарственное письмо </span>
+                <span>
+                  <span class="info-file__descr"> 3 mb PDF </span>
+                </span>
+              </a>
+              <div class="main__review__bot">
+                <img src="img/main/reviews/lenta.jpg" alt="" class="img-lenta"> </div>
+            </div>
+          </div>
+          <div class="close">
+            <svg class="icon icon-close">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="gallery">
+          <div class="customSlider-wrapper">
+            <div class="owl-carousel customSlider">
+              <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
+            </div>
+            <div class="customSlider-dots">
+              <div class="customSlider-dotsInner">
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
+              </div>
+            </div>
+            <div class="closeGallery">
               <svg class="icon icon-close">
                 <use xlink:href="img/sprite.svg#icon-close"></use>
               </svg>
             </div>
           </div>
-        </div>
-        <div class="header__hamburger">
-          <div class="icon">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>
-          </div>
-        </div>
-      </header>
-      <!--suppress CssUnknownTarget -->
-      <div class="main__screens">
-        <div class="main__screen main__home in-dark" id="home">
-          <div class="mainSliderCounter">
-            <div class="mainSliderCounter-Counts">
-              <div class="mainSliderCounter-currentCount"> 1 </div>
-              <div class="mainSliderCounter-CountsLine"></div>
-              <div class="mainSliderCounter-lengthCount"> 5 </div>
+          <div class="customSlider-wrapper">
+            <div class="owl-carousel customSlider">
+              <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
             </div>
-            <a href="#production" class="mainSliderCounter-next" data-layout="mainSliderCounter-next">
-              <svg class="icon icon-arrowLong">
-                <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
+            <div class="customSlider-dots">
+              <div class="customSlider-dotsInner">
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
+              </div>
+            </div>
+            <div class="closeGallery">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
               </svg>
-            </a>
-          </div>
-          <div class="video" style="background-image: url(img/main-hero.jpg);">
-            <video id="mainVideo" src="http://develop.yarovoy.studio/technostyle/video/main.mp4" muted="muted" preload="auto" playsinline> </video>
-            <div class="video__blackout"> </div>
-          </div>
-          <div class="main__hero">
-            <h1 class="big-title"> ТехноCтиль </h1>
-          </div>
-          <div class="main__bot">
-            <div class="mainBotInfo">
-              <div class="mainBotInfoHeader"> Производитель сэндвич-панелей, фасонных элементов и рулонной стали с полимерным покрытием </div>
-              <a href="production.html" class="mainBotLink"> Продукция
-                <svg class="icon icon-arrow-right">
-                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="mainBotColumn">
-              <div class="owl-carousel mainBotProductionSlider">
-                <div class="mainBotProductionSliderItem">
-                  <div class="mainBotColumnHeader"> 4 000 000 м² </div>
-                  <div> Сэндвич-панелей мощность производства в год </div>
-                </div>
-                <div class="mainBotProductionSliderItem">
-                  <div class="mainBotColumnHeader"> 10 000 м² </div>
-                  <div> Производственные площади </div>
-                </div>
-                <div class="mainBotProductionSliderItem">
-                  <div class="mainBotColumnHeader"> 18 000 </div>
-                  <div> Объектов построено, с использованием панелей ТехноСтиль </div>
-                </div>
-              </div>
-              <a href="production.html" class="mainBotLink"> О производстве
-                <svg class="icon icon-arrow-right">
-                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="mainBotColumn">
-              <div class="mainBotColumnInfo">
-                <a href="new.html" class="mainBotColumnHeader"> Итоги выставки «Металл-Экспо 2018» </a>
-              </div>
-              <a href="news.html" class="mainBotLink"> Новости
-                <svg class="icon icon-arrow-right">
-                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                </svg>
-              </a>
             </div>
           </div>
-        </div>
-        <div class="main__screen main__catalog" id="production">
-          <div class="container-wrapper">
-            <div class="mainSliderCounter">
-              <a href="#home" class="mainSliderCounter-prev" data-layout="mainSliderCounter-prev">
-                <svg class="icon icon-arrowLong">
-                  <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
-                </svg>
-              </a>
-              <div class="mainSliderCounter-Counts">
-                <div class="mainSliderCounter-currentCount"> 2 </div>
-                <div class="mainSliderCounter-CountsLine"></div>
-                <div class="mainSliderCounter-lengthCount"> 5 </div>
-              </div>
-              <a href="#services" class="mainSliderCounter-next" data-layout="mainSliderCounter-next">
-                <svg class="icon icon-arrowLong">
-                  <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
-                </svg>
-              </a>
+          <div class="customSlider-wrapper">
+            <div class="owl-carousel customSlider">
+              <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
             </div>
-            <div class="main__screen__header"> Продукция </div>
-            <div class="slider">
-              <div class="slider__counter">
-                <div class="slider__counter__cur">3</div>
-                <div class="slider__counter__line"></div>
-                <div class="slider__counter__length">7</div>
-              </div>
-              <div class="slider__dots">
-                <div class="slider__dots__inner">
-                  <div>
-                    <div class="slider__dot"> Сэндвич-панели с минеральной ватой (МВ) </div>
-                  </div>
-                  <div>
-                    <div class="slider__dot"> Сэндвич-панели с&nbsp;пенополистиролом (ПП) </div>
-                  </div>
-                  <div>
-                    <div class="slider__dot"> Сэндвич-панели с (PIR) / (PUR) </div>
-                  </div>
-                  <div>
-                    <div class="slider__dot"> Окрашенная рулонная сталь </div>
-                  </div>
-                  <div>
-                    <div class="slider__dot"> Фасонные элементы и&nbsp;комплектующие </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-carousel">
-                <div class="slider__item">
-                  <div class="slider__item-pic">
-                    <img src="img/main/catalog/1.png" alt=""> </div>
-                  <div class="btns">
-                    <a href="#" class="btn-next__wrapper">
-                      <div class="btn-next blue">
-                        <div class="btn-next__icon"> </div>
-                        <div class="btn-next__text"> Стеновые </div>
-                      </div>
-                    </a>
-                    <a href="#" class="btn-next__wrapper">
-                      <div class="btn-next orange">
-                        <div class="btn-next__icon"> </div>
-                        <div class="btn-next__text"> Кровельные </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="slider__item">
-                  <div class="slider__item-pic">
-                    <img src="img/main/catalog/2.png" alt=""> </div>
-                  <div class="btns">
-                    <a href="#" class="btn-next__wrapper">
-                      <div class="btn-next blue">
-                        <div class="btn-next__icon"> </div>
-                        <div class="btn-next__text"> Подробнее </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="slider__item">
-                  <div class="slider__item-pic">
-                    <img src="img/main/catalog/3.png" alt=""> </div>
-                  <div class="btns">
-                    <a href="#" class="btn-next__wrapper">
-                      <div class="btn-next blue">
-                        <div class="btn-next__icon"> </div>
-                        <div class="btn-next__text"> Стеновые </div>
-                      </div>
-                    </a>
-                    <a href="#" class="btn-next__wrapper">
-                      <div class="btn-next orange">
-                        <div class="btn-next__icon"> </div>
-                        <div class="btn-next__text"> Кровельные </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="slider__item rolls">
-                  <img src="img/main/catalog/4.png" class="pic-rolls" alt="">
-                  <div class="btns">
-                    <a href="#" class="btn-next__wrapper">
-                      <div class="btn-next blue">
-                        <div class="btn-next__icon"> </div>
-                        <div class="btn-next__text"> www.color-ts.ru </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="slider__item fasson">
-                  <img src="img/main/catalog/5.png" class="pic-fasson" alt="">
-                  <div class="btns">
-                    <a href="#" class="btn-next__wrapper">
-                      <div class="btn-next blue">
-                        <div class="btn-next__icon"> </div>
-                        <div class="btn-next__text"> Подробнее </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
+            <div class="customSlider-dots">
+              <div class="customSlider-dotsInner">
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="main__screen main__services in-dark" id="services">
-          <div class="container-wrapper">
-            <div class="mainSliderCounter">
-              <a href="#production" class="mainSliderCounter-prev" data-layout="mainSliderCounter-prev">
-                <svg class="icon icon-arrowLong">
-                  <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
-                </svg>
-              </a>
-              <div class="mainSliderCounter-Counts">
-                <div class="mainSliderCounter-currentCount"> 3 </div>
-                <div class="mainSliderCounter-CountsLine"></div>
-                <div class="mainSliderCounter-lengthCount"> 5 </div>
-              </div>
-              <a href="#objects" class="mainSliderCounter-next" data-layout="mainSliderCounter-next">
-                <svg class="icon icon-arrowLong">
-                  <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
-                </svg>
-              </a>
+            <div class="closeGallery">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
             </div>
-            <div class="main__screen__header"> Услуги </div>
-            <div class="slider">
-              <div class="slider__counter">
-                <div class="slider__counter__cur">3</div>
-                <div class="slider__counter__line"></div>
-                <div class="slider__counter__length">7</div>
-              </div>
-              <div class="slider__dots">
-                <div class="slider__dots__inner">
-                  <div>
-                    <div class="slider__dot"> Проектирование </div>
-                  </div>
-                  <div>
-                    <div class="slider__dot"> Упаковка </div>
-                  </div>
-                  <div>
-                    <div class="slider__dot"> Доставка </div>
-                  </div>
-                  <div>
-                    <div class="slider__dot"> Монтаж </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-carousel">
-                <div class="slider__item" style="background-image: url(img/main/services/1.jpg);">
-                  <div class="service__info">
-                    <h1 class="service__title animate-clip-inner"> Проектирование заготовок по проекту </h1>
-                    <div class="service__descr animate-clip-inner"> Специалисты конструкторского отдела выполняют монтажную схему по панелям, а также разработают нестандартные технические решения и расчеты </div>
-                    <div class="btn-next__wrapper">
-                      <a href="service.html" class="btn-next blue">
-                        <div class="btn-next__icon"> </div>
-                        <div class="btn-next__text"> Побробнее </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__item" style="background-image: url(img/main/services/2.jpg);">
-                  <div class="service__info">
-                    <h1 class="service__title animate-clip-inner"> Упаковка </h1>
-                    <div class="service__descr animate-clip-inner"> Сэндвич-панели упаковываются несколькими способами в зависимости от расстояния и вида транспорта: стандартная и усиленная упаковка для автотранспорта, упаковка для перевозки ж/д, морским путём, а также&amp;nbsp;с помощью контейнеров.
-                      </div>
-                    <div class="btn-next__wrapper">
-                      <a href="service.html" class="btn-next blue">
-                        <div class="btn-next__icon"> </div>
-                        <div class="btn-next__text"> Побробнее </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__item" style="background-image: url(img/main/services/3.jpg);">
-                  <div class="service__info">
-                    <h1 class="service__title animate-clip-inner"> Доставка </h1>
-                    <div class="service__descr animate-clip-inner"> Осуществляется всеми видами транспорта в любую точку России, а также в страны ближнего и дальнего зарубежья. </div>
-                    <div class="btn-next__wrapper">
-                      <a href="service.html" class="btn-next blue">
-                        <div class="btn-next__icon"> </div>
-                        <div class="btn-next__text"> Побробнее </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__item" style="background-image: url(img/main/services/4.jpg);">
-                  <div class="service__info">
-                    <h1 class="service__title animate-clip-inner"> Монтаж </h1>
-                    <div class="service__descr animate-clip-inner"> Работы по монтажу проводят надежные партнеры нашей компании. Обращаясь к нам, вы можете рассчитывать на высокое качество монтажа, соблюдение сроков согласно заключенного договора и специальные цены на установку сэндвич-панелей. </div>
-                    <div class="btn-next__wrapper">
-                      <a href="service.html" class="btn-next blue">
-                        <div class="btn-next__icon"> </div>
-                        <div class="btn-next__text"> Побробнее </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+          </div>
+          <div class="customSlider-wrapper">
+            <div class="owl-carousel customSlider">
+              <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
+              <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
+            </div>
+            <div class="customSlider-dots">
+              <div class="customSlider-dotsInner">
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
+                <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="main__screen main__objects in-dark gallery" id="objects">
-          <div class="container-wrapper">
-            <div class="mainSliderCounter">
-              <a href="#services" class="mainSliderCounter-prev" data-layout="mainSliderCounter-prev">
-                <svg class="icon icon-arrowLong">
-                  <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
-                </svg>
-              </a>
-              <div class="mainSliderCounter-Counts">
-                <div class="mainSliderCounter-currentCount"> 4 </div>
-                <div class="mainSliderCounter-CountsLine"></div>
-                <div class="mainSliderCounter-lengthCount"> 5 </div>
-              </div>
-              <a href="#news" class="mainSliderCounter-next" data-layout="mainSliderCounter-next">
-                <svg class="icon icon-arrowLong">
-                  <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
-                </svg>
-              </a>
+            <div class="closeGallery">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
             </div>
-            <div class="main__screen__header"> Объекты </div>
-            <div class="slider">
-              <div class="slider__dots">
-                <div class="slider__dots__inner">
-                  <div>
-                    <a href="#" class="slider__dot"> Леруа Мерлен </a>
-                  </div>
-                  <div>
-                    <a href="#" class="slider__dot"> Аэропорт «Внуково» </a>
-                  </div>
-                  <div>
-                    <a href="#" class="slider__dot"> Selgros </a>
-                  </div>
-                  <div>
-                    <a href="#" class="slider__dot"> Mercedes Benz </a>
-                  </div>
-                </div>
-              </div>
-              <div class="slider__counter">
-                <div class="slider__counter__cur">3</div>
-                <div class="slider__counter__line"></div>
-                <div class="slider__counter__length">7</div>
-              </div>
-              <div class="owl-carousel main__object__slider__wrapper">
-                <div class="slider__item" style="background-image: url(img/main/objects/kashirovaya-plaza/DJI_0642.jpg);">
-                  <div class="openGallery">
-                    <svg class="icon icon-openGallery">
-                      <use xlink:href="img/sprite.svg#icon-openGallery"></use>
-                    </svg>
-                  </div>
-                  <div class="main__objects__info-wrapper slider__item__info">
-                    <div class="main__objects__info">
-                      <div class="main__objects__header">
-                        <h2 class="main__objects__title h2"> «Леруа Мерлен» в Балашихе, Московская обл. </h2>
-                        <div class="main__objects__descr"> </div>
-                      </div>
-                      <div class="main__objects__numbers">
-                        <div class="main__objects__number">
-                          <div class="main__objects__numbers__title"> 21 000 м² </div>
-                          <div class="main__objects__numbers__descr"> Объем поставки
-                            <br> панелей в год </div>
-                        </div>
-                        <div class="main__objects__number">
-                          <div class="main__objects__numbers__title"> 2014 </div>
-                          <div class="main__objects__numbers__descr"> Год постройки </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slider__item__bot">
-                      <div class="slider__item__bot__left">
-                        <div class="main__objects__review__wrapper">
-                          <div class="main__objects__review"> Отзыв клиента </div>
-                        </div>
-                        <div class="btn-next__wrapper">
-                          <a href="product.html" class="btn-next blue">
-                            <div class="btn-next__icon"> </div>
-                            <div class="btn-next__text"> Подробнее </div>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="slider__all-wrapper">
-                        <a href="#" class="slider__all">
-                          <span>Все объекты</span>
-                          <svg class="icon icon-arrow">
-                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__item" style="background-image: url(img/main/objects/pavlovskaya-sloboda/DJI_0219.jpg);">
-                  <div class="openGallery">
-                    <svg class="icon icon-openGallery">
-                      <use xlink:href="img/sprite.svg#icon-openGallery"></use>
-                    </svg>
-                  </div>
-                  <div class="main__objects__info-wrapper slider__item__info">
-                    <div class="main__objects__info">
-                      <div class="main__objects__header">
-                        <h2 class="main__objects__title h2"> Аэропорт «Внуково», Москва </h2>
-                        <div class="main__objects__descr"> </div>
-                      </div>
-                      <div class="main__objects__numbers">
-                        <div class="main__objects__number">
-                          <div class="main__objects__numbers__title"> 21 000 м² </div>
-                          <div class="main__objects__numbers__descr"> Объем поставки
-                            <br> панелей в год </div>
-                        </div>
-                        <div class="main__objects__number">
-                          <div class="main__objects__numbers__title"> 2014 </div>
-                          <div class="main__objects__numbers__descr"> Год постройки </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slider__item__bot">
-                      <div class="slider__item__bot__left">
-                        <div class="main__objects__review__wrapper">
-                          <div class="main__objects__review"> Отзыв клиента </div>
-                        </div>
-                        <div class="btn-next__wrapper">
-                          <a href="product.html" class="btn-next blue">
-                            <div class="btn-next__icon"> </div>
-                            <div class="btn-next__text"> Подробнее </div>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="slider__all-wrapper">
-                        <a href="#" class="slider__all">
-                          <span>Все объекты</span>
-                          <svg class="icon icon-arrow">
-                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__item" style="background-image: url(img/main/objects/ubileyniy/DJI_0909.jpg);">
-                  <div class="openGallery">
-                    <svg class="icon icon-openGallery">
-                      <use xlink:href="img/sprite.svg#icon-openGallery"></use>
-                    </svg>
-                  </div>
-                  <div class="main__objects__info-wrapper slider__item__info">
-                    <div class="main__objects__info">
-                      <div class="main__objects__header">
-                        <h2 class="main__objects__title h2"> Склад «Selgros», в Одинцово, Московская обл. </h2>
-                        <div class="main__objects__descr"> </div>
-                      </div>
-                      <div class="main__objects__numbers">
-                        <div class="main__objects__number">
-                          <div class="main__objects__numbers__title"> 21 000 м² </div>
-                          <div class="main__objects__numbers__descr"> Объем поставки
-                            <br> панелей в год </div>
-                        </div>
-                        <div class="main__objects__number">
-                          <div class="main__objects__numbers__title"> 2014 </div>
-                          <div class="main__objects__numbers__descr"> Год постройки </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slider__item__bot">
-                      <div class="slider__item__bot__left">
-                        <div class="main__objects__review__wrapper">
-                          <div class="main__objects__review"> Отзыв клиента </div>
-                        </div>
-                        <div class="btn-next__wrapper">
-                          <a href="product.html" class="btn-next blue">
-                            <div class="btn-next__icon"> </div>
-                            <div class="btn-next__text"> Подробнее </div>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="slider__all-wrapper">
-                        <a href="#" class="slider__all">
-                          <span>Все объекты</span>
-                          <svg class="icon icon-arrow">
-                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__item" style="background-image: url(img/main/objects/ubileyniy/DJI_0904.jpg);">
-                  <div class="openGallery">
-                    <svg class="icon icon-openGallery">
-                      <use xlink:href="img/sprite.svg#icon-openGallery"></use>
-                    </svg>
-                  </div>
-                  <div class="main__objects__info-wrapper slider__item__info">
-                    <div class="main__objects__info">
-                      <div class="main__objects__header">
-                        <h2 class="main__objects__title h2"> Mercedes Benz </h2>
-                        <div class="main__objects__descr"> </div>
-                      </div>
-                      <div class="main__objects__numbers">
-                        <div class="main__objects__number">
-                          <div class="main__objects__numbers__title"> 21 000 м² </div>
-                          <div class="main__objects__numbers__descr"> Объем поставки
-                            <br> панелей в год </div>
-                        </div>
-                        <div class="main__objects__number">
-                          <div class="main__objects__numbers__title"> 2014 </div>
-                          <div class="main__objects__numbers__descr"> Год постройки </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slider__item__bot">
-                      <div class="slider__item__bot__left">
-                        <div class="main__objects__review__wrapper">
-                          <div class="main__objects__review"> Отзыв клиента </div>
-                        </div>
-                        <div class="btn-next__wrapper">
-                          <a href="product.html" class="btn-next blue">
-                            <div class="btn-next__icon"> </div>
-                            <div class="btn-next__text"> Подробнее </div>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="slider__all-wrapper">
-                        <a href="#" class="slider__all">
-                          <span>Все объекты</span>
-                          <svg class="icon icon-arrow">
-                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="main__screen mainNews in-dark" id="news">
-          <div class="container-wrapper">
-            <div class="mainSliderCounter">
-              <a href="#objects" class="mainSliderCounter-prev" data-layout="mainSliderCounter-prev">
-                <svg class="icon icon-arrowLong">
-                  <use xlink:href="img/sprite.svg#icon-arrowLong"></use>
-                </svg>
-              </a>
-              <div class="mainSliderCounter-Counts">
-                <div class="mainSliderCounter-currentCount"> 5 </div>
-                <div class="mainSliderCounter-CountsLine"></div>
-                <div class="mainSliderCounter-lengthCount"> 5 </div>
-              </div>
-            </div>
-            <div class="main__screen__header"> Анонсы </div>
-            <div class="slider__counter">
-              <div class="slider__counter__cur">1</div>
-              <div class="slider__counter__line"></div>
-              <div class="slider__counter__length">3</div>
-            </div>
-            <div class="mainNewsSlider owl-carousel">
-              <div class="mainNewsSliderItem" style="background-image: url(img/main/news/1.jpg);">
-                <div class="mainNewsSliderItemInfo">
-                  <div class="mainNewsSliderItemDate"> 15.01.2019 </div>
-                  <div class="mainNewsSliderItemBlock">
-                    <div class="mainNewsSliderItemTitle h3"> Открытие 24-й Международной промышленной выставки «Металл-Экспо 2018» </div>
-                    <div class="mainNewsSliderItemDescription h4"> Компания «Техностиль колор» в рамках 24-ой выставки рада познакомить всех участников и посетителей с деятельностью завода, представить образцы своей продукции, наладить новые перспективные деловые отношения. Ждем вас на нашем стенде
-                      в 75 павильоне, 3 зале, место ЗА03. </div>
-                    <div class="btn-next__wrapper">
-                      <a href="new.html" class="btn-next blue">
-                        <div class="btn-next__icon"> </div>
-                        <div class="btn-next__text"> Читать далее </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mainNewsSliderItem" style="background-image: url(img/main/news/2.jpg);">
-                <div class="mainNewsSliderItemInfo">
-                  <div class="mainNewsSliderItemDate"> 15.01.2019 </div>
-                  <div class="mainNewsSliderItemBlock">
-                    <div class="mainNewsSliderItemTitle h3"> Открытие 24-й Международной промышленной выставки «Металл-Экспо 2018» </div>
-                    <div class="mainNewsSliderItemDescription h4"> Компания «Техностиль колор» в рамках 24-ой выставки рада познакомить всех участников и посетителей с деятельностью завода, представить образцы своей продукции, наладить новые перспективные деловые отношения. Ждем вас на нашем стенде
-                      в 75 павильоне, 3 зале, место ЗА03. </div>
-                    <div class="btn-next__wrapper">
-                      <a href="new.html" class="btn-next blue">
-                        <div class="btn-next__icon"> </div>
-                        <div class="btn-next__text"> Читать далее </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mainNewsSliderItem" style="background-image: url(img/about/hero.jpg);">
-                <div class="mainNewsSliderItemInfo">
-                  <div class="mainNewsSliderItemDate"> 15.01.2019 </div>
-                  <div class="mainNewsSliderItemBlock">
-                    <div class="mainNewsSliderItemTitle h3"> Открытие 24-й Международной промышленной выставки «Металл-Экспо 2018» </div>
-                    <div class="mainNewsSliderItemDescription h4"> Компания «Техностиль колор» в рамках 24-ой выставки рада познакомить всех участников и посетителей с деятельностью завода, представить образцы своей продукции, наладить новые перспективные деловые отношения. Ждем вас на нашем стенде
-                      в 75 павильоне, 3 зале, место ЗА03. </div>
-                    <div class="btn-next__wrapper">
-                      <a href="new.html" class="btn-next blue">
-                        <div class="btn-next__icon"> </div>
-                        <div class="btn-next__text"> Читать далее </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mainNewsSliderNext">
-              <div class="mainNewsSliderNextBorder"></div>
-              <div class="mainNewsSliderNextImage" style="background-image: url(img/main/news/2.jpg);"></div>
-            </div>
-          </div>
-          <div class="simpleFooter">
-            <div class="container-wrapper">
-              <div class="simpleFooterCopyright"> © 2008 – 2019 ГК «Техностиль» </div>
-              <a href="http://yarovoy.studio" target="_blank"> Разработка сайта — Студия Евгения Ярового` </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="main__review">
-        <div class="row">
-          <div class="col">
-            <div class="main__review__descr"> «Спасибо большое компании и ее работникам за то, что качественно выполняете свои обязанности и делаете это великолепно!
-              <br>Расчитываю на дальнейшую продуктивную работу с вами» </div>
-            <div class="main__review__bot">
-              <span> Директор по строительству Рыцев И.Н. </span>
-            </div>
-          </div>
-          <div class="col">
-            <a href="#" class="info-file">
-              <span class="info-file__pic">
-                <img src="img/main/reviews/lenta-doc.jpg" alt=""> </span>
-              <span class="info-file__title"> Благодарственное письмо </span>
-              <span>
-                <span class="info-file__descr"> 3 mb PDF </span>
-              </span>
-            </a>
-            <div class="main__review__bot">
-              <img src="img/main/reviews/lenta.jpg" alt="" class="img-lenta"> </div>
-          </div>
-        </div>
-        <div class="close">
-          <svg class="icon icon-close">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="customSlider-wrapper">
-          <div class="owl-carousel customSlider">
-            <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
-          </div>
-          <div class="customSlider-dots">
-            <div class="customSlider-dotsInner">
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
-            </div>
-          </div>
-          <div class="closeGallery">
-            <svg class="icon icon-close">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="customSlider-wrapper">
-          <div class="owl-carousel customSlider">
-            <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
-          </div>
-          <div class="customSlider-dots">
-            <div class="customSlider-dotsInner">
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
-            </div>
-          </div>
-          <div class="closeGallery">
-            <svg class="icon icon-close">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="customSlider-wrapper">
-          <div class="owl-carousel customSlider">
-            <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
-          </div>
-          <div class="customSlider-dots">
-            <div class="customSlider-dotsInner">
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
-            </div>
-          </div>
-          <div class="closeGallery">
-            <svg class="icon icon-close">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="customSlider-wrapper">
-          <div class="owl-carousel customSlider">
-            <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj1.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj2.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj3.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj4.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj5.jpg);"> </div>
-            <div class="customSlider-item" style="background-image: url(img/objects/obj6.jpg);"> </div>
-          </div>
-          <div class="customSlider-dots">
-            <div class="customSlider-dotsInner">
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj1.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj2.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj3.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj4.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj5.jpg);"> </div>
-              <div class="customSlider-dot" style="background-image: url(img/objects/obj6.jpg);"> </div>
-            </div>
-          </div>
-          <div class="closeGallery">
-            <svg class="icon icon-close">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
           </div>
         </div>
       </div>
@@ -975,6 +977,50 @@
       <div class="preloader__copy"> © 2008 – 2018 ГК «Техностиль» </div>
     </div>
     <script>
+      /* find polyfill */
+      if (!Array.prototype.find)
+      {
+        Object.defineProperty(Array.prototype, 'find',
+        {
+          value: function(predicate)
+          {
+            // 1. Let O be ? ToObject(this value).
+            if (this == null)
+            {
+              throw new TypeError('"this" is null or not defined');
+            }
+            var o = Object(this);
+            // 2. Let len be ? ToLength(? Get(O, "length")).
+            var len = o.length >>> 0;
+            // 3. If IsCallable(predicate) is false, throw a TypeError exception.
+            if (typeof predicate !== 'function')
+            {
+              throw new TypeError('predicate must be a function');
+            }
+            // 4. If thisArg was supplied, let T be thisArg; else let T be undefined.
+            var thisArg = arguments[1];
+            // 5. Let k be 0.
+            var k = 0;
+            // 6. Repeat, while k < len
+            while (k < len)
+            {
+              // a. Let Pk be ! ToString(k).
+              // b. Let kValue be ? Get(O, Pk).
+              // c. Let testResult be ToBoolean(? Call(predicate, T, « kValue, k, O »)).
+              // d. If testResult is true, return kValue.
+              var kValue = o[k];
+              if (predicate.call(thisArg, kValue, k, o))
+              {
+                return kValue;
+              }
+              // e. Increase k by 1.
+              k++;
+            }
+            // 7. Return undefined.
+            return undefined;
+          },
+        });
+      }
       var all = [];
       var imgs = document.getElementsByTagName('img');
       var video = document.getElementsByTagName('video');
@@ -1095,11 +1141,11 @@
         }
       }
       loaded();
-      var hbLoad = false;
+      window.hbLoad = false;
 
       function hasBeenLoaded()
       {
-        hbLoad = true;
+        window.hbLoad = true;
         perc = 100;
         scale.style.width = '100%';
         setTimeout(function()
