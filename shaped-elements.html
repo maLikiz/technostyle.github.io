@@ -88,7 +88,7 @@
             <h1 class="h1"> Фасонные
               <br>элементы
               <br>и&nbsp;комплектующие </h1>
-            <a href="" class="btn small"> Скачать каталог </a>
+            <a href="" class="btn small" download> Скачать каталог </a>
           </div>
         </div>
       </div>
@@ -433,7 +433,7 @@
         }
         if (el.className.indexOf('bg_found') > -1)
         {
-          var url = el.getAttribute('style').replace('background-image: url(', '').replace(');', '');
+          var url = el.getAttribute('style').replace('background-image: url(', '').replace(/\)|\;/g, '');
           var img = new Image();
           img.src = url;
           var imgIsExist = all.find(function(imgItem)

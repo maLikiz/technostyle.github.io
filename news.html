@@ -85,7 +85,7 @@
         <section class="section first">
           <div class="container">
             <div class="news">
-              <a href="#" class="new">
+              <a href="new.html" class="new">
                 <div class="new__pic-wrapper">
                   <div class="new__pic" style="background-image: url(img/news/2.jpg)"></div>
                 </div>
@@ -94,7 +94,7 @@
                   <h3 class="new__title h3"> ГК «ТехноСтиль» примет участие в выставке MosBuild-2018 в апреле </h3>
                 </div>
               </a>
-              <a href="#" class="new">
+              <a href="new.html" class="new">
                 <div class="new__pic-wrapper">
                   <div class="new__pic" style="background-image: url(img/news/2.jpg)"></div>
                 </div>
@@ -117,7 +117,7 @@
                 <div class="life-company__descr"> Недельный обучающий тренинг по продажам. Как попасть на тренинг? </div>
                 <div class="life-company__sub"> Каждые пол года мы проводим бесплатные тренинги для наших сотрудников. Не упустите свой шанс в этот раз! </div>
                 <div class="flex">
-                  <a href="#" class="link-next">
+                  <a href="new-category.html" class="link-next">
                     <span> О жизни компании </span>
                     <svg class="icon icon-arrow">
                       <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -131,7 +131,7 @@
         <section class="section">
           <div class="container">
             <div class="news">
-              <a href="#" class="new new-hero">
+              <a href="new.html" class="new new-hero">
                 <div class="new__pic" style="background-image: url(img/news/1.jpg)"></div>
                 <div class="new__info">
                   <time datetime="2018-05-18" class="new-date"> 18 мая 2018 </time>
@@ -151,7 +151,7 @@
                   <button class="btn">Подписаться</button>
                 </div>
               </form>
-              <a href="#" class="new">
+              <a href="new.html" class="new">
                 <div class="new__pic-wrapper">
                   <div class="new__pic" style="background-image: url(img/news/2.jpg)"></div>
                 </div>
@@ -160,7 +160,7 @@
                   <h3 class="new__title h3"> ГК «ТехноСтиль» примет участие в выставке MosBuild-2018 в апреле </h3>
                 </div>
               </a>
-              <a href="#" class="new">
+              <a href="new.html" class="new">
                 <div class="new__pic-wrapper">
                   <div class="new__pic" style="background-image: url(img/news/2.jpg)"></div>
                 </div>
@@ -385,7 +385,7 @@
         }
         if (el.className.indexOf('bg_found') > -1)
         {
-          var url = el.getAttribute('style').replace('background-image: url(', '').replace(');', '');
+          var url = el.getAttribute('style').replace('background-image: url(', '').replace(/\)|\;/g, '');
           var img = new Image();
           img.src = url;
           var imgIsExist = all.find(function(imgItem)

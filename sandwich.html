@@ -135,7 +135,7 @@
               <div class="mineral-wool__item"> Материал с&nbsp;волокнистой структурой, который получается в процессе плавки горных пород </div>
             </div>
             <div>
-              <a href="#" class="link-next">
+              <a href="documents.html" class="link-next">
                 <span> Сертификаты </span>
                 <svg class="icon icon-arrow">
                   <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -499,7 +499,7 @@
         }
         if (el.className.indexOf('bg_found') > -1)
         {
-          var url = el.getAttribute('style').replace('background-image: url(', '').replace(');', '');
+          var url = el.getAttribute('style').replace('background-image: url(', '').replace(/\)|\;/g, '');
           var img = new Image();
           img.src = url;
           var imgIsExist = all.find(function(imgItem)

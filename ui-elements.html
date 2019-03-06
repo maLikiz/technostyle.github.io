@@ -524,7 +524,7 @@
         }
         if (el.className.indexOf('bg_found') > -1)
         {
-          var url = el.getAttribute('style').replace('background-image: url(', '').replace(');', '');
+          var url = el.getAttribute('style').replace('background-image: url(', '').replace(/\)|\;/g, '');
           var img = new Image();
           img.src = url;
           var imgIsExist = all.find(function(imgItem)

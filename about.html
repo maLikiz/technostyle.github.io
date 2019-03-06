@@ -108,7 +108,7 @@
         <div class="container">
           <div class="parallax-circles">
             <h2 class="parallax-circles__title big"> Стратегическая задача — сохранение репутации надежного поставщика
-              <a href="" class="link">сэндвич-панелей</a> , соответствующих международным стандартам качества </h2>
+              <a href="sandwich.html" class="link">сэндвич-панелей</a> , соответствующих международным стандартам качества </h2>
             <div class="parallax-circles__items">
               <div class="empty"></div>
               <div class="parallax-circles__item">
@@ -116,7 +116,7 @@
                   <h3 class="parallax-circles__item__title"> ISO 9001:2015 </h3>
                   <div class="parallax-circles__item__descr"> Система менеджмента качества соответствует международным стандартам </div>
                 </div>
-                <a href="#" class="link-next">
+                <a href="objects.html" class="link-next">
                   <span> Все объекты </span>
                   <svg class="icon icon-arrow">
                     <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -128,7 +128,7 @@
                   <h3 class="parallax-circles__item__title"> Вакансии </h3>
                   <div class="parallax-circles__item__descr"> Инженер проектировщик 40 000 руб Москва </div>
                 </div>
-                <a href="#" class="link-next">
+                <a href="vacancies.html" class="link-next">
                   <span> Все вакансии </span>
                   <svg class="icon icon-arrow">
                     <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -206,7 +206,7 @@
             <div class="map__header__right">
               <h2 class="map__header__title"> География поставок </h2>
               <div class="map__header__descr"> Наша география поставок включает в себя более 50 городов нашей страны и стран ближнего зарубежья </div>
-              <a href="#" class="link-next">
+              <a href="objects.html" class="link-next">
                 <span> Все объекты </span>
                 <svg class="icon icon-arrow">
                   <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -335,7 +335,7 @@
               <div class="life-company__descr"> Недельный обучающий тренинг по продажам. Как попасть на тренинг? </div>
               <div class="life-company__sub"> Каждые пол года мы проводим бесплатные тренинги для наших сотрудников. Не упустите свой шанс в этот раз! </div>
               <div class="flex">
-                <a href="#" class="link-next">
+                <a href="new-category.html" class="link-next">
                   <span> О жизни компании </span>
                   <svg class="icon icon-arrow">
                     <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -550,7 +550,7 @@
           }
           if (el.className.indexOf('bg_found') > -1)
           {
-            var url = el.getAttribute('style').replace('background-image: url(', '').replace(');', '');
+            var url = el.getAttribute('style').replace('background-image: url(', '').replace(/\)|\;/g, '');
             var img = new Image();
             img.src = url;
             var imgIsExist = all.find(function(imgItem)

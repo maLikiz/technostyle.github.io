@@ -154,7 +154,7 @@
         <section class="section">
           <div class="headerFlex">
             <div class="h2"> Другие услуги </div>
-            <a href="#" class="link-next h4">
+            <a href="new-category.html" class="link-next h4">
               <span> О жизни компании </span>
               <svg class="icon icon-arrow">
                 <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -164,11 +164,11 @@
         </section>
       </div>
       <div class="service-switcher">
-        <a href="" class="service-switcherItem">
+        <a href="service.html" class="service-switcherItem">
           <img src="img/main/services/2.jpg" alt="">
           <span class="service-switcherItemHeader h2"> Упаковка </span>
         </a>
-        <a href="" class="service-switcherItem">
+        <a href="service.html" class="service-switcherItem">
           <img src="img/main/services/3.jpg" alt="">
           <span class="service-switcherItemHeader h2"> Доставка </span>
         </a>
@@ -377,7 +377,7 @@
         }
         if (el.className.indexOf('bg_found') > -1)
         {
-          var url = el.getAttribute('style').replace('background-image: url(', '').replace(');', '');
+          var url = el.getAttribute('style').replace('background-image: url(', '').replace(/\)|\;/g, '');
           var img = new Image();
           img.src = url;
           var imgIsExist = all.find(function(imgItem)

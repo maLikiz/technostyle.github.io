@@ -111,7 +111,7 @@
                   <div class="cell banner-lab">
                     <img src="img/documents/lab.png" alt="">
                     <div class="banner-lab__title"> Лаборатория входящего и исходящего контроля качества </div>
-                    <a href="#" class="link-next">
+                    <a href="production.html" class="link-next">
                       <span> Производство </span>
                       <svg class="icon icon-arrow">
                         <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -214,26 +214,26 @@
             <div class="expander__content-wrapper">
               <div class="expander__content">
                 <div class="pdf-files">
-                  <div class="pdf-file">
+                  <a href="#" class="pdf-file">
                     <img src="img/documents/cat1.jpg" alt="">
                     <div class="pdf-file__title"> Презентационный каталог </div>
                     <div class="pdf-file__info"> 22 mb PDF </div>
-                  </div>
-                  <div class="pdf-file">
+                  </a>
+                  <a href="#" class="pdf-file">
                     <img src="img/documents/cat2.jpg" alt="">
                     <div class="pdf-file__title"> Угловые сэндвич-панели и панели со скрытым креплением </div>
                     <div class="pdf-file__info"> 10 mb PDF </div>
-                  </div>
-                  <div class="pdf-file">
+                  </a>
+                  <a href="#" class="pdf-file">
                     <img src="img/documents/cat3.jpg" alt="">
                     <div class="pdf-file__title"> Каталог технических решений </div>
                     <div class="pdf-file__info"> 10 mb PDF </div>
-                  </div>
-                  <div class="pdf-file">
+                  </a>
+                  <a href="#" class="pdf-file">
                     <img src="img/documents/cat4.jpg" alt="">
                     <div class="pdf-file__title"> Каталог окрашенной рулонной стали Техностиль Колор </div>
                     <div class="pdf-file__info"> 10 mb PDF </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -444,7 +444,7 @@
         }
         if (el.className.indexOf('bg_found') > -1)
         {
-          var url = el.getAttribute('style').replace('background-image: url(', '').replace(');', '');
+          var url = el.getAttribute('style').replace('background-image: url(', '').replace(/\)|\;/g, '');
           var img = new Image();
           img.src = url;
           var imgIsExist = all.find(function(imgItem)

@@ -122,7 +122,7 @@
             <div class="col gost__left">
               <div> Соответствие стандарту
                 <br>ГОСТ 32603-2012 </div>
-              <a href="#" class="link-next">
+              <a href="documents.html" class="link-next">
                 <span> Сертификаты </span>
                 <svg class="icon icon-arrow">
                   <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -860,7 +860,7 @@
           <div class="sandwich-examples__item">
             <div class="sandwich-examples__item__pic">
               <img src="img/roofs/sandwich1.png" /> </div>
-            <a href="#" class="sandwich-examples__item__title"> Сэндвич-панели
+            <a href="sandwich.html" class="sandwich-examples__item__title"> Сэндвич-панели
               <br>с PIR/PUR
               <svg class="icon icon-arrow">
                 <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -870,7 +870,7 @@
           <div class="sandwich-examples__item right">
             <div class="sandwich-examples__item__pic">
               <img src="img/roofs/sandwich2.png" /> </div>
-            <a href="#" class="sandwich-examples__item__title"> Сэндвич-панели
+            <a href="sandwich.html" class="sandwich-examples__item__title"> Сэндвич-панели
               <br>с PIR/PUR
               <svg class="icon icon-arrow">
                 <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -1083,7 +1083,7 @@
         }
         if (el.className.indexOf('bg_found') > -1)
         {
-          var url = el.getAttribute('style').replace('background-image: url(', '').replace(');', '');
+          var url = el.getAttribute('style').replace('background-image: url(', '').replace(/\)|\;/g, '');
           var img = new Image();
           img.src = url;
           var imgIsExist = all.find(function(imgItem)

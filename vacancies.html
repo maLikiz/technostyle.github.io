@@ -289,7 +289,7 @@
                   <img src="img/girl-small.png" alt=""> </div>
                 <div class="banner-life-company__info">
                   <div class="banner-life-company__descr"> ГК «ТехноСтиль» — не только производство, но и люди работающие на нем. </div>
-                  <a href="#" class="link-next">
+                  <a href="new-category.html" class="link-next">
                     <span> Жизнь компании </span>
                     <svg class="icon icon-arrow">
                       <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -307,7 +307,7 @@
                     <div class="life-company__descr"> Недельный обучающий тренинг по продажам. Как попасть на тренинг? </div>
                     <div class="life-company__sub"> Каждые пол года мы проводим бесплатные тренинги для наших сотрудников. Не упустите свой шанс в этот раз! </div>
                     <div class="flex">
-                      <a href="#" class="link-next">
+                      <a href="new-category.html" class="link-next">
                         <span> О жизни компании </span>
                         <svg class="icon icon-arrow">
                           <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -587,7 +587,7 @@
         }
         if (el.className.indexOf('bg_found') > -1)
         {
-          var url = el.getAttribute('style').replace('background-image: url(', '').replace(');', '');
+          var url = el.getAttribute('style').replace('background-image: url(', '').replace(/\)|\;/g, '');
           var img = new Image();
           img.src = url;
           var imgIsExist = all.find(function(imgItem)

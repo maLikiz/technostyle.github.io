@@ -97,7 +97,7 @@
             <div class="main__bot">
               <div class="mainBotInfo">
                 <div class="mainBotInfoHeader"> Производитель сэндвич-панелей, фасонных элементов и рулонной стали с полимерным покрытием </div>
-                <a href="production.html" class="mainBotLink"> Продукция
+                <a href="products.html" class="mainBotLink"> Продукция
                   <svg class="icon icon-arrow-right">
                     <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
                   </svg>
@@ -204,7 +204,7 @@
                     <div class="slider__item-pic">
                       <img src="img/main/catalog/2.png" alt=""> </div>
                     <div class="btns">
-                      <a href="#" class="btn-next__wrapper">
+                      <a href="sandwich.html" class="btn-next__wrapper">
                         <div class="btn-next blue">
                           <div class="btn-next__icon"> </div>
                           <div class="btn-next__text"> Подробнее </div>
@@ -233,7 +233,7 @@
                   <div class="slider__item rolls">
                     <img src="img/main/catalog/4.png" class="pic-rolls" alt="">
                     <div class="btns">
-                      <a href="#" class="btn-next__wrapper">
+                      <a href="http://color-ts.ru/" target="_blank" class="btn-next__wrapper">
                         <div class="btn-next blue">
                           <div class="btn-next__icon"> </div>
                           <div class="btn-next__text"> www.color-ts.ru </div>
@@ -432,7 +432,7 @@
                           </div>
                         </div>
                         <div class="slider__all-wrapper">
-                          <a href="#" class="slider__all">
+                          <a href="objects.html" class="slider__all">
                             <span>Все объекты</span>
                             <svg class="icon icon-arrow">
                               <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -479,7 +479,7 @@
                           </div>
                         </div>
                         <div class="slider__all-wrapper">
-                          <a href="#" class="slider__all">
+                          <a href="objects.html" class="slider__all">
                             <span>Все объекты</span>
                             <svg class="icon icon-arrow">
                               <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -526,7 +526,7 @@
                           </div>
                         </div>
                         <div class="slider__all-wrapper">
-                          <a href="#" class="slider__all">
+                          <a href="objects.html" class="slider__all">
                             <span>Все объекты</span>
                             <svg class="icon icon-arrow">
                               <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -573,7 +573,7 @@
                           </div>
                         </div>
                         <div class="slider__all-wrapper">
-                          <a href="#" class="slider__all">
+                          <a href="objects.html" class="slider__all">
                             <span>Все объекты</span>
                             <svg class="icon icon-arrow">
                               <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -1046,7 +1046,7 @@
         }
         if (el.className.indexOf('bg_found') > -1)
         {
-          var url = el.getAttribute('style').replace('background-image: url(', '').replace(');', '');
+          var url = el.getAttribute('style').replace('background-image: url(', '').replace(/\)|\;/g, '');
           var img = new Image();
           img.src = url;
           var imgIsExist = all.find(function(imgItem)

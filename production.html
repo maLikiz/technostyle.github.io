@@ -105,7 +105,7 @@
             <div class="production-about-description">
               <p> Производство соответствует международным стандартам согласно системе менеджмента качества ISO 9001:2015 </p>
               <p> Пожаробезопасность и санитарно-гигиенические показатели продукции подтверждаются
-                <a href="#" class="link">сертификатами</a>
+                <a href="documents.html" class="link">сертификатами</a>
               </p>
             </div>
             <div class="article__gost">
@@ -571,7 +571,7 @@
         }
         if (el.className.indexOf('bg_found') > -1)
         {
-          var url = el.getAttribute('style').replace('background-image: url(', '').replace(');', '');
+          var url = el.getAttribute('style').replace('background-image: url(', '').replace(/\)|\;/g, '');
           var img = new Image();
           img.src = url;
           var imgIsExist = all.find(function(imgItem)

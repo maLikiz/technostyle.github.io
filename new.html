@@ -131,7 +131,7 @@
                 власти, строительных компаний, проектных организации, производителей. </p>
               <p> Стратегическая задача, над реализацией которой мы целенаправленно работаем с момента основания компании, — завоевание репутации надёжного поставщика стеновых и кровельных сэндвич-панелей </p>
               <p> Применение современных технологий
-                <a href="#" class="link">производства</a> , высокий профессионализм, большой опыт работы и слаженность действий команды, </p>
+                <a href="production.html" class="link">производства</a> , высокий профессионализм, большой опыт работы и слаженность действий команды, </p>
             </div>
             <div class="new-page__party">
               <div class="new-page__party__pic">
@@ -205,7 +205,7 @@
             <div class="container">
               <div class="section__header">
                 <h2 class="section__title">Другие новости</h2>
-                <a href="#" class="link-next">
+                <a href="news.html" class="link-next">
                   <span> Все новости </span>
                   <svg class="icon icon-arrow">
                     <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -213,7 +213,7 @@
                 </a>
               </div>
               <div class="news">
-                <a href="#" class="new">
+                <a href="new.html" class="new">
                   <div class="new__pic-wrapper">
                     <div class="new__pic" style="background-image: url(img/news/2.jpg)"></div>
                   </div>
@@ -222,7 +222,7 @@
                     <h3 class="new__title h3"> ГК «ТехноСтиль» примет участие в выставке MosBuild-2018 в апреле </h3>
                   </div>
                 </a>
-                <a href="#" class="new">
+                <a href="new.html" class="new">
                   <div class="new__pic-wrapper">
                     <div class="new__pic" style="background-image: url(img/news/2.jpg)"></div>
                   </div>
@@ -440,7 +440,7 @@
         }
         if (el.className.indexOf('bg_found') > -1)
         {
-          var url = el.getAttribute('style').replace('background-image: url(', '').replace(');', '');
+          var url = el.getAttribute('style').replace('background-image: url(', '').replace(/\)|\;/g, '');
           var img = new Image();
           img.src = url;
           var imgIsExist = all.find(function(imgItem)
